@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _puts - print a string followed by a new line
+ * _puts - prints a string
  * @str: the string
  *
  * Return: the length of the string
  */
-void _puts(char *str);
+void _puts(char *str)
 {
 	int i = 0;
 
