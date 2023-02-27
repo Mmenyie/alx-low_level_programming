@@ -4,7 +4,7 @@
  * _puts - print a string followed by a new line
  * @str: the string
  *
- * Return: 0
+ * Return: the length of the string
  */
 void _puts(char *str);
 {
