@@ -1,46 +1,46 @@
 #include "main.h"
 
 /**
- * string_nconcat - A function that concatenates two strings
+ * string_nconcat - a function that concatenates two strings.
  *
  * @s1: first char
  * @s2: second char
  * @n: unsigned int
  *
- * Return: If the function fails, return NULL
+ * Return: If the function fails, it should return NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int k, l, m;
+	unsigned int x, y, z;
 	char *s;
 
 	if (s1 == NULL)
 	{
-		k = 0;
+		x = 0;
 	}
 	else
 	{
-		for (k = 0; s1[k]; ++k)
+		for (x = 0; s1[x]; ++x)
 		;
 	}
 	if (s2 == NULL)
 	{
-		l = 0;
-	{
+		y = 0;
+	}
 	else
 	{
-		for (l = 0, s2[l]; ++l)
+		for (y = 0; s2[y]; ++y)
 		;
 	}
-	if (l > n)
-		l = n;
-	s = malloc(sizeof(char) * (k + l + 1));
+	if (y > n)
+		y = n;
+	s = malloc(sizeof(char) * (x + y + 1));
 	if (s == NULL)
 		return (NULL);
-	for (m = 0; m < k; m++)
-		s[m] = s1[m];
-	for (m = 0; m < l; m++)
-		s[m + k] = s2[m];
-	s[k + l] = '\0';
+	for (z = 0; z < x; z++)
+		s[z] = s1[z];
+	for (z = 0; z < y; z++)
+		s[z + x] = s2[z];
+	s[x + y] = '\0';
 	return (s);
 }
