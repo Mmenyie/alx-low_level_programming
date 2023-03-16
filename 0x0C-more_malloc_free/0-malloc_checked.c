@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
 
 /**
  * malloc_checked - cause exit with status value
- *
+ *@b: allocated memory
  * Return: a pointer to allocated memory
  *
  */
