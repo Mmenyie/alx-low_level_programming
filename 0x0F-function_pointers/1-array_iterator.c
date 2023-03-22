@@ -1,8 +1,8 @@
-include "function_pointers.h"
+#include "function_pointers.h"
 
  /**
- * array_iterator - prints each array elem on a newl
- * @array: array
+ * array_iterator - prints each array elem on a newline
+ * @array: array to execute function
  * @size: how many elem to print
  * @action: pointer to print in regular or hex
  * Return: void
