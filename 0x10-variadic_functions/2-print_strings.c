@@ -1,14 +1,15 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - Prints strings passed to functions separated by separator
+ * print_strings - Prints strings passed to the function separed by separators
  * @separator: A string that is used to separate strings
  * @n: number of unnamed parameters
- * Return: 0
+ * Return: Always 0
  */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	char str;
+	char *str;
 	unsigned int i;
 	va_list ap;
 
