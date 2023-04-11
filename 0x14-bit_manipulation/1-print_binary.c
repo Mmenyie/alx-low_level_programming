@@ -14,9 +14,9 @@ void print_binary(unsigned long int n)
 	for (m = sizeof(n) * 8 - 1; m >= 0; m--)
 	{
 		if (n & (1 << m))
-			printf("1");
+			_putchar('1');
 		else
-			printf("0");
+			_putchar('0');
 	}
-	printf("\n");
+	_putchar('\n');
 }
