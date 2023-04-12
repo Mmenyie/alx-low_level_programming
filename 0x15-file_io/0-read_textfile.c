@@ -5,8 +5,9 @@
 
 /**
  * read_textfile - Reads a textfile and prints it to POSIX
- * filename: pointer that points to the name of the file.
  * @letters: the number of letters function read and print
+ * @filename: pointer that points to the name of the file.
+ *
  * Return: if filename can not open 0, if it is Null 0, if write fails 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
