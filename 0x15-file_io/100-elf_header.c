@@ -131,8 +131,6 @@ void print_version(unsigned char *e_ident)
 	}
 }
 
-}
-
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
