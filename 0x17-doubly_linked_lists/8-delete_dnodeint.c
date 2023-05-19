@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * delete_dnodeint_at_index - delete node at index in dlistint_t list
  * @head: list
